@@ -22,7 +22,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       description: '一个普通人的生活记录',
     }
   },
-  // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  base: '/LifeNote/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
   themeConfig: {
@@ -117,7 +117,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
     //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
     //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175846.jpeg',
-       'https://github.com/inkstarchen/picx-images-hosting/raw/master/【森林】2024-07-09-08_27_50.839x83bxt9.webp'
+       '/LifeNote/img/森林.png',
      ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
      bodyBgImgOpacity: 1.0, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
@@ -150,7 +150,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://github.com/inkstarchen/picx-images-hosting/raw/master/info_img.4n7lg4l0h4.jpg',
+      avatar: '/LifeNote/img/info.jpg',
       name: 'Inkstar',
       slogan: 'Step by step to dream life.',
     },
@@ -307,11 +307,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+          clientID: 'Ov23liHDBxWSoh58DzbC',
+          clientSecret: '5bc57a47bc54d4d916a6d15c509a60226a05dbf0',
           repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          owner: 'inkstarchen', // GitHub仓库所有者
+          admin: ['inkstarchen'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
