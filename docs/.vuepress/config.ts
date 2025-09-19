@@ -29,39 +29,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '阅读笔记',
-        link: '/Reading/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '心理学',
-            items: [
-              { text: '社会心理学', link: '/pages/fbd9e8/' },
-            ],
-          },
-          {
-            text: '文学类',
-            items:[
-              { text: '人生的智慧', link: '/pages/7c917f/' }
-            ],
-          },{
-            text: '观点类',
-            items:[
-              { text: '黑天鹅', link:'/pages/aa7b8e/'},
-              { text: '散记', link:'/pages/e639ee/'},
-              { text: '原则', link:'/pages/fb0826/'},
-              { text: '学习的本质', link:'/pages/b54ec9/'},
-              { text: '吴军阅读和写作讲义', link:'/pages/71a609/'},
-            ],
-          },]
-        },
-          {
-            text: '生活记录',
-            items: [
-              { text: '电影', link: '/Life/movie/' },
-            ],
-          },
+      { text: '日报', link: '/daily/'},
           {
             text:'文海拾遗',
             items:[
@@ -95,6 +63,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebar: 'structuring', // 根据目录结构生成
+    sidebarOpen: false,     // 默认收起所有分组
     logo: '/img/logo.png', // 导航栏logo
     repo: 'inkstarchen', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
@@ -117,7 +87,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
     //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
     //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175846.jpeg',
-       '/LifeNote/img/森林.png',
+       '/img/back.jpg',
      ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
      bodyBgImgOpacity: 1.0, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
@@ -150,7 +120,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: '/LifeNote/img/info.jpg',
+      avatar: 'https://github.com/inkstarchen/picx-images-hosting/raw/master/info_img.4n7lg4l0h4.jpg',
       name: 'Inkstar',
       slogan: 'Step by step to dream life.',
     },
