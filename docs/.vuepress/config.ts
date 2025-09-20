@@ -63,7 +63,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    sidebar: 'structuring', // 根据目录结构生成
     sidebarOpen: false,     // 默认收起所有分组
     logo: '/img/logo.png', // 导航栏logo
     repo: 'inkstarchen', // 导航栏右侧生成Github链接
@@ -191,6 +190,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 插件配置
   plugins: <UserPlugins>[
+    ["mathjax",
+      {
+        target: 'chtml',
+      },
+    ],
     [
       "sitemap", // 网站地图
       {
