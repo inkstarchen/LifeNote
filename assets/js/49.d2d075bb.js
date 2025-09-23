@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[49],{416:function(t,n,s){"use strict";s.r(n);var o=s(9),e=Object(o.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[t("strong",[this._v("在一段时间中要专注做好这段时间的事，思考如何将结果延展到未来的生活中去，并进行大层面上的整合.")])])])}),[],!1,null,null,null);n.default=e.exports}}]);
